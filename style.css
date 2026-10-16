@@ -1,0 +1,234 @@
+
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #263238;
+    background-color: #f8faf9;
+}
+
+/* Header and navigation */
+.hero {
+    min-height: 480px;
+    color: white;
+    background: linear-gradient(
+        rgba(8, 54, 42, 0.85),
+        rgba(8, 54, 42, 0.85)
+    );
+}
+#logo2{
+    width: 15%;
+    height: 10%;
+    opacity: 80%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f4cf76;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    color: #f4cf76;
+}
+
+/* Hero content */
+.hero-content {
+    text-align: center;
+    padding: 95px 20px;
+}
+
+.hero-content h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    color: #153c30;
+    background-color: #f4cf76;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* About section */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 8%;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.subtitle {
+    color: #25805f;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.about-text h2 {
+    font-size: 34px;
+    color: #154d3b;
+    margin: 10px 0 20px;
+}
+
+.about-text p {
+    margin-bottom: 18px;
+}
+
+.about-card {
+    flex: 1;
+    background-color: #e6f1eb;
+    padding: 35px;
+    text-align: center;
+    border-radius: 12px;
+    border-bottom: 5px solid #25805f;
+}
+
+.card-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.about-card h3 {
+    color: #154d3b;
+    margin-bottom: 10px;
+}
+
+/* Mission, vision and values */
+.mission-section {
+    display: flex;
+    gap: 25px;
+    padding: 60px 8%;
+    background-color: #edf3ef;
+}
+
+.mission-card {
+    flex: 1;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.mission-card h2 {
+    color: #19704f;
+    margin-bottom: 15px;
+}
+
+/* Inspirational message */
+.quote-section {
+    text-align: center;
+    padding: 70px 8%;
+    background-color: #154d3b;
+    color: white;
+}
+
+.quote-section h2 {
+    color: #f4cf76;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* Contact section */
+.contact-section {
+    text-align: center;
+    padding: 60px 8%;
+}
+
+.contact-section h2 {
+    color: #154d3b;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+    background-color: #102e25;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero-content {
+        padding: 65px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .about-section,
+    .mission-section {
+        flex-direction: column;
+        padding: 45px 6%;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-card,
+    .mission-card {
+        width: 100%;
+    }
+}
